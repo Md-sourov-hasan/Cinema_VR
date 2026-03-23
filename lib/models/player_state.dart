@@ -21,7 +21,7 @@ class PlayerState extends ChangeNotifier {
   String _selectedGenre = 'All';
   bool _headTrackingEnabled = true;
   double _fov = 90.0; // Field of view for VR
-  List<VideoItem> _localVideos = [];
+  final List<VideoItem> _localVideos = [];
   bool _needsSeek = false;
 
   VideoItem? get currentVideo => _currentVideo;

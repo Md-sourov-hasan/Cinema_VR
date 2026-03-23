@@ -194,7 +194,7 @@ class _PlayerScreenState extends State<PlayerScreen>
 
             // Loading indicator
             if (!_initialized)
-              Center(
+              const Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -206,8 +206,8 @@ class _PlayerScreenState extends State<PlayerScreen>
                         valueColor: AlwaysStoppedAnimation(TheaterTheme.accent),
                       ),
                     ),
-                    const SizedBox(height: 20),
-                    const Text(
+                    SizedBox(height: 20),
+                    Text(
                       'LOADING',
                       style: TextStyle(
                         fontFamily: 'Cinzel',
@@ -491,7 +491,7 @@ class _PlayerScreenState extends State<PlayerScreen>
                   ),
                 ),
                 // Label
-                Positioned(
+                const Positioned(
                   top: 16,
                   left: 16,
                   child: GoldBadge(label: 'VIDEO'),
@@ -642,7 +642,7 @@ class _VRSettings extends StatelessWidget {
                 // video_360 usually handles sensors automatically or via native code, 
                 // but we sync the state just in case future updates allow control.
               },
-              activeColor: TheaterTheme.accent,
+              activeThumbColor: TheaterTheme.accent,
               inactiveTrackColor: TheaterTheme.border,
             ),
           ],

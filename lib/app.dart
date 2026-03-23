@@ -174,7 +174,7 @@ class _LibraryScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(16),
                         border: Border.all(
                             color: TheaterTheme.borderGold, width: 1),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: TheaterTheme.accentGlow,
                             blurRadius: 10,
@@ -265,11 +265,11 @@ class _LibraryScreen extends StatelessWidget {
                           children: [
                             Expanded(
                               child: Container(
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.black,
-                                  borderRadius: const BorderRadius.vertical(
+                                  borderRadius: BorderRadius.vertical(
                                       top: Radius.circular(12)),
-                                  image: const DecorationImage(
+                                  image: DecorationImage(
                                     image: NetworkImage(
                                         'https://picsum.photos/seed/local/400/300'),
                                     fit: BoxFit.cover,

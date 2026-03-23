@@ -43,7 +43,7 @@ class SettingsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
-          _SectionHeader(title: 'VR EXPERIENCE'),
+          const _SectionHeader(title: 'VR EXPERIENCE'),
 
           _SettingCard(
             child: Column(
@@ -72,7 +72,7 @@ class SettingsScreen extends StatelessWidget {
           ),
 
           const SizedBox(height: 16),
-          _SectionHeader(title: 'PLAYBACK'),
+          const _SectionHeader(title: 'PLAYBACK'),
 
           _SettingCard(
             child: Column(
@@ -105,7 +105,7 @@ class SettingsScreen extends StatelessWidget {
           ),
 
           const SizedBox(height: 16),
-          _SectionHeader(title: 'DISPLAY'),
+          const _SectionHeader(title: 'DISPLAY'),
 
           _SettingCard(
             child: Column(
@@ -291,7 +291,7 @@ class _SwitchRow extends StatelessWidget {
           Switch(
             value: value,
             onChanged: onChanged,
-            activeColor: TheaterTheme.accent,
+            activeThumbColor: TheaterTheme.accent,
             inactiveTrackColor: TheaterTheme.border,
           ),
         ],
@@ -327,8 +327,8 @@ class _VRModeSelector extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: const [
+          const Row(
+            children: [
               Icon(Icons.vrpano_rounded, color: TheaterTheme.accent, size: 18),
               SizedBox(width: 12),
               Text(
@@ -410,8 +410,8 @@ class _SpeedSelector extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: const [
+          const Row(
+            children: [
               Icon(Icons.speed_rounded, color: TheaterTheme.accent, size: 18),
               SizedBox(width: 12),
               Text(
@@ -480,8 +480,8 @@ class _PlayerModeSelector extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: const [
+          const Row(
+            children: [
               Icon(Icons.display_settings_rounded, color: TheaterTheme.accent, size: 18),
               SizedBox(width: 12),
               Text(

@@ -180,12 +180,12 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         ),
 
         // Decorative film strips
-        Positioned(
+        const Positioned(
           top: 20,
           left: -20,
           child: _FilmStrip(vertical: true),
         ),
-        Positioned(
+        const Positioned(
           top: 20,
           right: -20,
           child: _FilmStrip(vertical: true),
@@ -243,7 +243,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
           right: 0,
           height: 60,
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -316,7 +316,7 @@ class _GenreFilter extends StatelessWidget {
                 ),
                 boxShadow: selected
                     ? [
-                        BoxShadow(
+                        const BoxShadow(
                           color: TheaterTheme.accentGlow,
                           blurRadius: 12,
                         )

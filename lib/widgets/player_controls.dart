@@ -166,7 +166,7 @@ class _PlayButton extends StatelessWidget {
       child: Container(
         width: 68,
         height: 68,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           shape: BoxShape.circle,
           color: TheaterTheme.accent,
           boxShadow: [
@@ -334,7 +334,7 @@ class _ModeToggle extends StatelessWidget {
     final state = context.watch<PlayerState>();
     return GestureDetector(
       onTap: () {
-        final modes = PlayerMode.values;
+        const modes = PlayerMode.values;
         final next = modes[(modes.indexOf(state.playerMode) + 1) % modes.length];
         context.read<PlayerState>().setPlayerMode(next);
       },

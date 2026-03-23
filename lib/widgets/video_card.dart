@@ -51,7 +51,7 @@ class _VideoCardState extends State<VideoCard> {
               ),
               boxShadow: _hovered
                   ? [
-                      BoxShadow(
+                      const BoxShadow(
                         color: TheaterTheme.accentGlow,
                         blurRadius: 20,
                         spreadRadius: 2,
@@ -80,7 +80,7 @@ class _VideoCardState extends State<VideoCard> {
                           widget.video.thumbnailUrl,
                           fit: BoxFit.cover,
                           errorBuilder: (_, __, ___) => Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 begin: Alignment.topLeft,
                                 end: Alignment.bottomRight,
@@ -158,7 +158,7 @@ class _VideoCardState extends State<VideoCard> {
                               decoration: BoxDecoration(
                                 color: TheaterTheme.accent.withOpacity(0.9),
                                 shape: BoxShape.circle,
-                                boxShadow: [
+                                boxShadow: const [
                                   BoxShadow(
                                     color: TheaterTheme.accentGlow,
                                     blurRadius: 20,

@@ -237,9 +237,9 @@ class _WatchButtons extends StatelessWidget {
               ),
               elevation: 0,
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 Icon(Icons.play_arrow_rounded, size: 28),
                 SizedBox(width: 8),
                 Text(
@@ -284,9 +284,9 @@ class _WatchButtons extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Icon(Icons.vrpano_rounded, size: 22),
                   SizedBox(width: 8),
                   Text(
@@ -320,12 +320,12 @@ class _VRInfoCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
+          const Row(
             children: [
-              const Icon(Icons.vrpano_rounded,
+              Icon(Icons.vrpano_rounded,
                   color: TheaterTheme.accent, size: 20),
-              const SizedBox(width: 10),
-              const Text(
+              SizedBox(width: 10),
+              Text(
                 'VR EXPERIENCE',
                 style: TextStyle(
                   fontFamily: 'Cinzel',
@@ -342,11 +342,11 @@ class _VRInfoCard extends StatelessWidget {
           const SizedBox(height: 12),
           _VRInfoRow(icon: Icons.view_in_ar_rounded, label: 'FORMAT', value: video.typeLabel),
           const SizedBox(height: 8),
-          _VRInfoRow(icon: Icons.headset_rounded, label: 'COMPATIBLE', value: 'All VR Headsets'),
+          const _VRInfoRow(icon: Icons.headset_rounded, label: 'COMPATIBLE', value: 'All VR Headsets'),
           const SizedBox(height: 8),
-          _VRInfoRow(icon: Icons.rotate_90_degrees_cw_rounded, label: 'HEAD TRACKING', value: 'Gyroscope + Accelerometer'),
+          const _VRInfoRow(icon: Icons.rotate_90_degrees_cw_rounded, label: 'HEAD TRACKING', value: 'Gyroscope + Accelerometer'),
           const SizedBox(height: 8),
-          _VRInfoRow(icon: Icons.spatial_audio_rounded, label: 'AUDIO', value: 'Spatial 360°'),
+          const _VRInfoRow(icon: Icons.spatial_audio_rounded, label: 'AUDIO', value: 'Spatial 360°'),
         ],
       ),
     ).animate().fadeIn(delay: 450.ms).slideY(begin: 0.1);

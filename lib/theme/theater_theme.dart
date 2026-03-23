@@ -82,13 +82,13 @@ class TheaterTheme {
           elevation: 0,
           iconTheme: IconThemeData(color: textPrimary),
         ),
-        sliderTheme: SliderThemeData(
+        sliderTheme: const SliderThemeData(
           activeTrackColor: accent,
           inactiveTrackColor: border,
           thumbColor: accent,
           overlayColor: accentGlow,
           trackHeight: 2,
-          thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 6),
+          thumbShape: RoundSliderThumbShape(enabledThumbRadius: 6),
         ),
       );
 }
